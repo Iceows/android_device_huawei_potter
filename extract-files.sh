@@ -23,6 +23,9 @@ function blob_fixup() {
             sed -i 's/<gaus_sigm8>(.*)<\/gaus_sigm10>/<gaus_sigm8>(.*)<\/gaus_sigm8>/g' "${2}"
             sed -i 's/<gaus_sigm9>(.*)<\/gaus_sigm10>/<gaus_sigm9>(.*)<\/gaus_sigm79/g' "${2}"
             ;;
+        odm/lib64/hwcam/hwcam.kirin710.m.POT.so)
+            "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
+            ;;
     esac
 }
 
