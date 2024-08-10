@@ -5,3 +5,7 @@
 #
 
 DEVICE_PATH := device/huawei/potter
+
+# Inherit from kirin710-common
+include device/huawei/kirin710-9-common/BoardConfigCommon.mk
+
