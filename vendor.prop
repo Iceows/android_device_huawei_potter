@@ -1,3 +1,5 @@
 # Camera
 ro.vendor.camera.platform_name=POT
 
+# Bluetooth
+bluetooth.device.default_name=Huawei P Smart 2019
