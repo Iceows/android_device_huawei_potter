@@ -12,5 +12,8 @@ include device/huawei/kirin710-9-common/BoardConfigCommon.mk
 # Display
 TARGET_SCREEN_DENSITY := 415
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Inherit the proprietary files
 include vendor/huawei/potter/BoardConfigVendor.mk
