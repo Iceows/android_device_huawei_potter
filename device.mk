@@ -7,3 +7,7 @@
 
 # Inherit from kirin710-9-common
 $(call inherit-product, device/huawei/kirin710-9-common/common.mk)
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
