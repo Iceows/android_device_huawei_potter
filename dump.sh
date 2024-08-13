@@ -7,6 +7,8 @@ echo ""
 echo "To generate proprietary files"
 echo "cd dump && find $PWD -type f | sort > potter-files.txt"
 echo ""
+echo "The extract script use tidy to clean Huawei XML files, so please install it before"
+echo ""
 sleep 5
 
 echo "Dump file from phone"
