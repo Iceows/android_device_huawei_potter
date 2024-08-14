@@ -16,8 +16,10 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_SHIPPING_API_LEVEL := 28
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayPotter \
+    SettingsProviderResOverlayPotter \
+    WifiResOverlayPotter
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
