@@ -8,6 +8,9 @@
 # Inherit from kirin710-9-common
 $(call inherit-product, device/huawei/kirin710-9-common/common.mk)
 
+# Call the proprietary setup
+$(call inherit-product, vendor/huawei/potter/potter-vendor.mk)
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
@@ -18,12 +21,10 @@ PRODUCT_SHIPPING_API_LEVEL := 28
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworksResOverlayPotter \
-    SettingsProviderResOverlayPotter \
     WifiResOverlayPotter
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# Call the proprietary setup
-$(call inherit-product, vendor/huawei/potter/potter-vendor.mk)
+

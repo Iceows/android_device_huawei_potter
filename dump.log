@@ -1,5 +1,5 @@
 Cleaning output directory (./../../huawei/kirin710-9-common/../../../vendor/huawei/kirin710-9-common/proprietary)..
-Extracting 507 files in ./../../huawei/kirin710-9-common/proprietary-files.txt from ./dump/:
+Extracting 518 files in ./../../huawei/kirin710-9-common/proprietary-files.txt from ./dump/:
   - system/bin/tee_auth_daemon
   - system/etc/native_packages.bin
   - system/lib/libc_secshared.so
@@ -63,7 +63,10 @@ Extracting 507 files in ./../../huawei/kirin710-9-common/proprietary-files.txt f
   - vendor/bin/hw/vendor.huawei.hardware.gnss@1.2-service
   - vendor/bin/hw/vendor.huawei.hardware.graphics.mediacomm@2.0-service
   - vendor/bin/hw/vendor.huawei.hardware.hisupl@1.0-service
+  - vendor/bin/hw/vendor.huawei.hardware.iawareperf@1.0-service
   - vendor/bin/hw/vendor.huawei.hardware.libteec@2.0-service
+  - vendor/bin/hw/vendor.huawei.hardware.perfgenius@2.0-service
+  - vendor/bin/hw/vendor.huawei.hardware.sensors@1.0-service
   - vendor/bin/hw/vendor.huawei.hardware.tp@1.0-service
   - vendor/bin/oam_hisi
   - vendor/bin/octty
@@ -257,10 +260,12 @@ Extracting 507 files in ./../../huawei/kirin710-9-common/proprietary-files.txt f
   - vendor/lib/hw/lights.kirin710.so
   - vendor/lib/hw/mediacomm.kirin710.so
   - vendor/lib/hw/memtrack.kirin710.so
+  - vendor/lib/hw/sensors.kirin710.so
   - vendor/lib/hw/thermal.kirin710.so
   - vendor/lib/hw/vendor.huawei.hardware.camera.factory@1.0-impl.so
   - vendor/lib/hw/vendor.huawei.hardware.graphics.mediacomm@2.0-impl.so
   - vendor/lib/hw/vendor.huawei.hardware.libteec@2.0-impl.so
+  - vendor/lib/hw/vendor.huawei.hardware.perfgenius@2.0-impl.so
   - vendor/lib/hwcam/hwcam.ddt.so
   - vendor/lib/hwcam/hwcam.services.so
   - vendor/lib/libCLCropAndScale.so
@@ -288,9 +293,13 @@ Extracting 507 files in ./../../huawei/kirin710-9-common/proprietary-files.txt f
   - vendor/lib/libhiai_common.so
     + Fixed up vendor/lib/libhiai_common.so
   - vendor/lib/libhiion.so
+  - vendor/lib/libhisi_wrapper.so
   - vendor/lib/libhivwservice.so
   - vendor/lib/libhuaweiaudioeffectutil.so
   - vendor/lib/libhuaweicust.so
+  - vendor/lib/libiawareperf_client.so
+  - vendor/lib/libiawareperf_server.so
+  - vendor/lib/libiawareperfpolicy_server.so
   - vendor/lib/libimedia_filters.so
   - vendor/lib/libispenhnc.so
   - vendor/lib/libjtag_wdt_ctrl.so
@@ -300,6 +309,9 @@ Extracting 507 files in ./../../huawei/kirin710-9-common/proprietary-files.txt f
   - vendor/lib/libmotiondetect.so
   - vendor/lib/libnvme.so
   - vendor/lib/liboeminfo.so
+  - vendor/lib/libperfgenius_vendor_client.so
+  - vendor/lib/libperfhub.so
+  - vendor/lib/libperfhub_service.so
   - vendor/lib/libpf_customize_hisi.so
   - vendor/lib/libpf_oneimage_hisi.so
   - vendor/lib/libpf_rotate_hisi.so
@@ -334,10 +346,13 @@ Extracting 507 files in ./../../huawei/kirin710-9-common/proprietary-files.txt f
   - vendor/lib/vendor.huawei.hardware.graphics.mediacomm@2.1.so
   - vendor/lib/vendor.huawei.hardware.hisiradio@1.0.so
   - vendor/lib/vendor.huawei.hardware.hisupl@1.0.so
+  - vendor/lib/vendor.huawei.hardware.iawareperf@1.0.so
+  - vendor/lib/vendor.huawei.hardware.iawareperfpolicy@1.0.so
   - vendor/lib/vendor.huawei.hardware.radio.chr@1.0.so
   - vendor/lib/vendor.huawei.hardware.radio.deprecated@1.0.so
   - vendor/lib/vendor.huawei.hardware.radio.ims@1.0.so
   - vendor/lib/vendor.huawei.hardware.radio@2.0.so
+  - vendor/lib/vendor.huawei.hardware.sensors@1.0.so
   - vendor/lib/vendor.huawei.hardware.tp@1.0.so
   - vendor/lib64/egl/libGLES_mali.so
   - vendor/lib64/ese_hw_hal.so
@@ -363,13 +378,18 @@ This is a mistake and you want to either remove the hash completely, or add an e
   - vendor/lib64/hw/lights.kirin710.so
   - vendor/lib64/hw/mediacomm.kirin710.so
   - vendor/lib64/hw/memtrack.kirin710.so
+  - vendor/lib64/hw/sensors.kirin710.so
   - vendor/lib64/hw/sound_trigger.primary.default.so
   - vendor/lib64/hw/thermal.kirin710.so
   - vendor/lib64/hw/vendor.huawei.hardware.camera.factory@1.0-impl.so
   - vendor/lib64/hw/vendor.huawei.hardware.gnss@1.2-impl.so
   - vendor/lib64/hw/vendor.huawei.hardware.graphics.mediacomm@2.0-impl.so
   - vendor/lib64/hw/vendor.huawei.hardware.hisupl@1.0-impl.so
+  - vendor/lib64/hw/vendor.huawei.hardware.iawareperf@1.0-impl.so
+  - vendor/lib64/hw/vendor.huawei.hardware.iawareperfpolicy@1.0-impl.so
   - vendor/lib64/hw/vendor.huawei.hardware.libteec@2.0-impl.so
+  - vendor/lib64/hw/vendor.huawei.hardware.perfgenius@2.0-impl.so
+  - vendor/lib64/hw/vendor.huawei.hardware.sensors@1.0-impl.so
   - vendor/lib64/hw/vendor.huawei.hardware.tp@1.0-impl.so
   - vendor/lib64/hwcam/hwcam.ddt.so
   - vendor/lib64/hwcam/hwcam.services.so
@@ -445,10 +465,14 @@ This is a mistake and you want to either remove the hash completely, or add an e
   - vendor/lib64/libhiai_hidl.so
   - vendor/lib64/libhiai_server.so
   - vendor/lib64/libhiion.so
+  - vendor/lib64/libhisi_wrapper.so
   - vendor/lib64/libhivwservice.so
   - vendor/lib64/libhorizondetect.so
   - vendor/lib64/libhuaweiaudioeffectutil.so
   - vendor/lib64/libhuaweicust.so
+  - vendor/lib64/libiawareperf_client.so
+  - vendor/lib64/libiawareperf_server.so
+  - vendor/lib64/libiawareperfpolicy_server.so
   - vendor/lib64/libimedia_filters.so
   - vendor/lib64/libispenhnc.so
   - vendor/lib64/libjtag_wdt_ctrl.so
@@ -465,6 +489,9 @@ This is a mistake and you want to either remove the hash completely, or add an e
   - vendor/lib64/libmrc_cg_sz.so
   - vendor/lib64/libnvme.so
   - vendor/lib64/liboeminfo.so
+  - vendor/lib64/libperfgenius_vendor_client.so
+  - vendor/lib64/libperfhub.so
+  - vendor/lib64/libperfhub_service.so
   - vendor/lib64/libpf_customize_hisi.so
   - vendor/lib64/libpf_oneimage_hisi.so
   - vendor/lib64/libpf_rotate_hisi.so
@@ -507,41 +534,25 @@ This is a mistake and you want to either remove the hash completely, or add an e
   - vendor/lib64/vendor.huawei.hardware.graphics.mediacomm@2.1.so
   - vendor/lib64/vendor.huawei.hardware.hisiradio@1.0.so
   - vendor/lib64/vendor.huawei.hardware.hisupl@1.0.so
+  - vendor/lib64/vendor.huawei.hardware.iawareperf@1.0.so
+  - vendor/lib64/vendor.huawei.hardware.iawareperfpolicy@1.0.so
+  - vendor/lib64/vendor.huawei.hardware.perfgenius@2.0.so
   - vendor/lib64/vendor.huawei.hardware.radio.chr@1.0.so
   - vendor/lib64/vendor.huawei.hardware.radio.deprecated@1.0.so
   - vendor/lib64/vendor.huawei.hardware.radio.ims@1.0.so
   - vendor/lib64/vendor.huawei.hardware.radio@2.0.so
   - vendor/lib64/vendor.huawei.hardware.rtt@1.0.so
+  - vendor/lib64/vendor.huawei.hardware.sensors@1.0.so
   - vendor/lib64/vendor.huawei.hardware.tp@1.0.so
   - vendor/phone.prop
-  - vendor/bin/hw/vendor.huawei.hardware.iawareperf@1.0-service
-  - vendor/bin/hw/vendor.huawei.hardware.perfgenius@2.0-service
-  - vendor/bin/hw/vendor.huawei.hardware.sensors@1.0-service
-  - vendor/lib/hw/sensors.kirin710.so
-  - vendor/lib/hw/vendor.huawei.hardware.perfgenius@2.0-impl.so
-  - vendor/lib/libperfgenius_vendor_client.so
-  - vendor/lib/libperfhub.so
-  - vendor/lib/libperfhub_service.so
   - vendor/lib/libril-hisi.so
     + Fixed up vendor/lib/libril-hisi.so
-  - vendor/lib/vendor.huawei.hardware.iawareperf@1.0.so
-  - vendor/lib/vendor.huawei.hardware.sensors@1.0.so
   - vendor/lib64/hw/audio.primary.kirin710.so
     + Fixed up vendor/lib64/hw/audio.primary.kirin710.so
-  - vendor/lib64/hw/sensors.kirin710.so
-  - vendor/lib64/hw/vendor.huawei.hardware.perfgenius@2.0-impl.so
-  - vendor/lib64/hw/vendor.huawei.hardware.sensors@1.0-impl.so
-  - vendor/lib64/libiawareperf_client.so
-  - vendor/lib64/libperfgenius_vendor_client.so
-  - vendor/lib64/libperfhub.so
-  - vendor/lib64/libperfhub_service.so
   - vendor/lib64/libril-hisi.so
     + Fixed up vendor/lib64/libril-hisi.so
-  - vendor/lib64/vendor.huawei.hardware.iawareperf@1.0.so
-  - vendor/lib64/vendor.huawei.hardware.perfgenius@2.0.so
-  - vendor/lib64/vendor.huawei.hardware.sensors@1.0.so
 Cleaning output directory (./../../huawei/kirin710-9-common/../../../vendor/huawei/potter/proprietary)..
-Extracting 680 files in ./../../huawei/kirin710-9-common/../potter/proprietary-files.txt from ./dump/:
+Extracting 683 files in ./../../huawei/kirin710-9-common/../potter/proprietary-files.txt from ./dump/:
   - odm/etc/audio/algorithm/algorithm_POT_normal.xml
     + Fixed up odm/etc/audio/algorithm/algorithm_POT_normal.xml
   - odm/etc/audio/asrenhance/parameters_nuance_16k_2EC.bsd
@@ -1620,6 +1631,9 @@ Extracting 680 files in ./../../huawei/kirin710-9-common/../potter/proprietary-f
   - odm/etc/libnfc-nxp.conf
   - odm/etc/libnfc-nxp_RF.conf
   - odm/ta/sign_tool_product_ta.sec
+  - vendor/etc/camera/watermark/dm.argb
+  - vendor/etc/camera/watermark/dm.png
+  - vendor/etc/camera/watermark/param.xml
   - vendor/etc/cfg_pot_al00_7645_hisi.ini
   - vendor/etc/cfg_pot_al00_hisi.ini
   - vendor/etc/cfg_pot_al00a_hisi.ini

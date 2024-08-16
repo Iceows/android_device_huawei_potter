@@ -20,6 +20,7 @@ echo "Dump file from phone"
 #adb pull /product dump/
 #adb pull /odm dump/
 #adb pull /preavs dump/
+#adb pull /preas dump/
 
 echo "Start extraction"
 sleep 5

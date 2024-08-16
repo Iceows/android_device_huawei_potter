@@ -582,6 +582,11 @@ odm/etc/camera/tornado/s5k3p8_front/TornadoI.ini
 odm/etc/camera/tornado/s5k4h7_front/TornadoI.ini
 odm/etc/camera/tornado/s5kgd1sp_front/TornadoI.ini
 
+# Camera extra
+vendor/etc/camera/watermark/dm.argb
+vendor/etc/camera/watermark/dm.png
+vendor/etc/camera/watermark/param.xml
+
 # Camera Dependencies
 -odm/lib64/libSonyIMX371RmscLibrary.so
 -odm/lib64/libSonyPDLibrary.so
