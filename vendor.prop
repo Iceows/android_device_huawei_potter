@@ -3,3 +3,11 @@ ro.vendor.camera.platform_name=POT
 
 # Bluetooth
 bluetooth.device.default_name=Huawei P Smart 2019
+
+# ro.boot.product.hardware.sku=POT-LX1
+# ro.build.id=HUAWEIPOT-L21
+
+ro.dual.sim.phone=true
+ro.hwcamera.ai_resolution=3264x2448
+ro.product.hardwareversion=HL3POTM
+persist.sys.dualcards=true
