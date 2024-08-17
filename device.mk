@@ -5,6 +5,9 @@
 #
 #
 
+# Device Path
+DEVICE_PATH := device/huawei/potter
+
 # Inherit from kirin710-9-common
 $(call inherit-product, device/huawei/kirin710-9-common/common.mk)
 
@@ -15,13 +18,12 @@ $(call inherit-product, vendor/huawei/potter/potter-vendor.mk)
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
+# Init
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/init/potter.rc:$(TARGET_COPY_OUT_ODM)/etc/init/potter.rc
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 28
-
-# Overlays
-PRODUCT_PACKAGES += \
-    FrameworksResOverlayPotter \
-    WifiResOverlayPotter
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

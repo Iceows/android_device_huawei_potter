@@ -1,6 +1,0 @@
-
-
-on property:ro.boot.product.hardware.sku=POT-L01
-    setprop ro.odm.config.modem_number 1
-
-
