@@ -707,3 +707,14 @@ odm/etc/libnfc-nxp_RF.conf
 # TEE
 odm/ta/sign_tool_product_ta.sec
 
+# Wifi et P2P
+vendor/etc/wifi/wpa_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant_hisi.conf
+vendor/etc/wifi/wpa_supplicant.conf
+vendor/etc/wifi/p2p_supplicant_overlay.conf 
+vendor/etc/wifi/p2p_supplicant_hisi.conf 
+vendor/etc/wifi/hostapd_hisi.conf
+
+
+
+
