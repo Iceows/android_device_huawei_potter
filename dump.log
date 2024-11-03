@@ -1,15 +1,23 @@
 Cleaning output directory (./../../huawei/kirin710-9-common/../../../vendor/huawei/kirin710-9-common/proprietary)..
-Extracting 518 files in ./../../huawei/kirin710-9-common/proprietary-files.txt from ./dump/:
+Extracting 542 files in ./../../huawei/kirin710-9-common/proprietary-files.txt from ./dump/:
+  - vendor/bin/hw/android.hardware.drm@1.1-service.widevine
+  - vendor/lib/libwvhidl.so
+    + Fixed up vendor/lib/libwvhidl.so
+  - vendor/lib/liboemcrypto.so
   - system/bin/tee_auth_daemon
   - system/etc/native_packages.bin
   - system/lib/libc_secshared.so
   - system/lib/libteec_client.so
   - system/lib/libteeclientjni.so
   - system/lib/libtuidaemon.so
+  - system/lib/vendor.huawei.hardware.libteec@1.0.so
+  - system/lib/vendor.huawei.hardware.libteec@2.0.so
   - system/lib64/libc_secshared.so
   - system/lib64/libteec_client.so
   - system/lib64/libteeclientjni.so
   - system/lib64/libtuidaemon.so
+  - system/lib64/vendor.huawei.hardware.libteec@1.0.so
+  - system/lib64/vendor.huawei.hardware.libteec@2.0.so
   - system/usr/idc/fingerprint.idc
   - system/usr/keylayout/fingerprint.kl
   - vendor/bin/32e6a847-ac89-4f81-8a13-f4ae50451d7f.sec
@@ -173,9 +181,11 @@ Extracting 518 files in ./../../huawei/kirin710-9-common/proprietary-files.txt f
   - vendor/etc/gnss/rmd/g/aindex.bin
   - vendor/etc/gnss/rmd/t/a_1
   - vendor/etc/gnss/rmd/t/aindex.bin
+  - vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
   - vendor/etc/init/android.hardware.secure_element@1.0-service.hisi.rc
     + Fixed up vendor/etc/init/android.hardware.secure_element@1.0-service.hisi.rc
   - vendor/etc/init/vendor.huawei.hardware.biometrics.fingerprint@2.1-service.rc
+  - vendor/etc/init/vendor.huawei.hardware.dolby.dms@1.0-service.rc
   - vendor/etc/init/vendor.huawei.hardware.gnss@1.2-service.rc
   - vendor/etc/init/vendor.huawei.hardware.graphics.mediacomm@2.0-service.rc
   - vendor/etc/init/vendor.huawei.hardware.hisupl@1.0-service.rc
@@ -326,6 +336,8 @@ Extracting 518 files in ./../../huawei/kirin710-9-common/proprietary-files.txt f
   - vendor/lib/vendor.huawei.hardware.ai@1.0.so
   - vendor/lib/vendor.huawei.hardware.ai@1.1.so
   - vendor/lib/vendor.huawei.hardware.ai@1.2.so
+  - vendor/lib/vendor.huawei.hardware.biometrics.hwfacerecognize@1.0.so
+  - vendor/lib/vendor.huawei.hardware.biometrics.hwfacerecognize@1.1.so
   - vendor/lib/vendor.huawei.hardware.biometrics.hwsecurefacerecognize@1.0.so
   - vendor/lib/vendor.huawei.hardware.camera.camResource.orbService@1.0.so
   - vendor/lib/vendor.huawei.hardware.camera.camResource@1.0.so
@@ -345,9 +357,14 @@ Extracting 518 files in ./../../huawei/kirin710-9-common/proprietary-files.txt f
   - vendor/lib/vendor.huawei.hardware.graphics.mediacomm@2.0.so
   - vendor/lib/vendor.huawei.hardware.graphics.mediacomm@2.1.so
   - vendor/lib/vendor.huawei.hardware.hisiradio@1.0.so
+  - vendor/lib/vendor.huawei.hardware.hisiradio@1.1.so
   - vendor/lib/vendor.huawei.hardware.hisupl@1.0.so
+  - vendor/lib/vendor.huawei.hardware.hwfactoryinterface@1.0.so
+  - vendor/lib/vendor.huawei.hardware.hwfactoryinterface@1.1.so
+  - vendor/lib/vendor.huawei.hardware.hwvibrator@1.0.so
   - vendor/lib/vendor.huawei.hardware.iawareperf@1.0.so
   - vendor/lib/vendor.huawei.hardware.iawareperfpolicy@1.0.so
+  - vendor/lib/vendor.huawei.hardware.libteec@2.0.so
   - vendor/lib/vendor.huawei.hardware.radio.chr@1.0.so
   - vendor/lib/vendor.huawei.hardware.radio.deprecated@1.0.so
   - vendor/lib/vendor.huawei.hardware.radio.ims@1.0.so
@@ -514,6 +531,8 @@ This is a mistake and you want to either remove the hash completely, or add an e
   - vendor/lib64/vendor.huawei.hardware.ai@1.1.so
   - vendor/lib64/vendor.huawei.hardware.ai@1.2.so
   - vendor/lib64/vendor.huawei.hardware.ai@2.0.so
+  - vendor/lib64/vendor.huawei.hardware.biometrics.hwfacerecognize@1.0.so
+  - vendor/lib64/vendor.huawei.hardware.biometrics.hwfacerecognize@1.1.so
   - vendor/lib64/vendor.huawei.hardware.biometrics.hwsecurefacerecognize@1.0.so
   - vendor/lib64/vendor.huawei.hardware.camera.camResource.orbService@1.0.so
   - vendor/lib64/vendor.huawei.hardware.camera.camResource@1.0.so
@@ -533,9 +552,14 @@ This is a mistake and you want to either remove the hash completely, or add an e
   - vendor/lib64/vendor.huawei.hardware.graphics.mediacomm@2.0.so
   - vendor/lib64/vendor.huawei.hardware.graphics.mediacomm@2.1.so
   - vendor/lib64/vendor.huawei.hardware.hisiradio@1.0.so
+  - vendor/lib64/vendor.huawei.hardware.hisiradio@1.1.so
   - vendor/lib64/vendor.huawei.hardware.hisupl@1.0.so
+  - vendor/lib64/vendor.huawei.hardware.hwfactoryinterface@1.0.so
+  - vendor/lib64/vendor.huawei.hardware.hwfactoryinterface@1.1.so
+  - vendor/lib64/vendor.huawei.hardware.hwvibrator@1.0.so
   - vendor/lib64/vendor.huawei.hardware.iawareperf@1.0.so
   - vendor/lib64/vendor.huawei.hardware.iawareperfpolicy@1.0.so
+  - vendor/lib64/vendor.huawei.hardware.libteec@2.0.so
   - vendor/lib64/vendor.huawei.hardware.perfgenius@2.0.so
   - vendor/lib64/vendor.huawei.hardware.radio.chr@1.0.so
   - vendor/lib64/vendor.huawei.hardware.radio.deprecated@1.0.so
@@ -545,14 +569,14 @@ This is a mistake and you want to either remove the hash completely, or add an e
   - vendor/lib64/vendor.huawei.hardware.sensors@1.0.so
   - vendor/lib64/vendor.huawei.hardware.tp@1.0.so
   - vendor/phone.prop
-  - vendor/lib/libril-hisi.so
-    + Fixed up vendor/lib/libril-hisi.so
+  - vendor/etc/xml/iaware_config_cust.xml
+    + Fixed up vendor/etc/xml/iaware_config_cust.xml
+  - vendor/lib/libril.so
   - vendor/lib64/hw/audio.primary.kirin710.so
     + Fixed up vendor/lib64/hw/audio.primary.kirin710.so
-  - vendor/lib64/libril-hisi.so
-    + Fixed up vendor/lib64/libril-hisi.so
+  - vendor/lib64/libril.so
 Cleaning output directory (./../../huawei/kirin710-9-common/../../../vendor/huawei/potter/proprietary)..
-Extracting 683 files in ./../../huawei/kirin710-9-common/../potter/proprietary-files.txt from ./dump/:
+Extracting 689 files in ./../../huawei/kirin710-9-common/../potter/proprietary-files.txt from ./dump/:
   - odm/etc/audio/algorithm/algorithm_POT_normal.xml
     + Fixed up odm/etc/audio/algorithm/algorithm_POT_normal.xml
   - odm/etc/audio/asrenhance/parameters_nuance_16k_2EC.bsd
@@ -1643,6 +1667,12 @@ Extracting 683 files in ./../../huawei/kirin710-9-common/../potter/proprietary-f
   - vendor/etc/cfg_pot_lx2j_hisi.ini
   - vendor/etc/cfg_pot_lx3_hisi.ini
   - vendor/etc/cfg_pot_tl00_hisi.ini
+  - vendor/etc/wifi/hostapd_hisi.conf
+  - vendor/etc/wifi/p2p_supplicant_hisi.conf
+  - vendor/etc/wifi/p2p_supplicant_overlay.conf
+  - vendor/etc/wifi/wpa_supplicant.conf
+  - vendor/etc/wifi/wpa_supplicant_hisi.conf
+  - vendor/etc/wifi/wpa_supplicant_overlay.conf
   - odm/lib64/hwcam/hwcam.imx258.pd.so
   - odm/lib64/hwcam/hwcam.kirin710.POT.p.GC2375POT.so
   - odm/lib64/hwcam/hwcam.kirin710.POT.p.HI1333POT.so
