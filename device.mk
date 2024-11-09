@@ -18,6 +18,9 @@ $(call inherit-product, vendor/huawei/potter/potter-vendor.mk)
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
+
 # Init
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/init/potter.rc:$(TARGET_COPY_OUT_ODM)/etc/init/potter.rc

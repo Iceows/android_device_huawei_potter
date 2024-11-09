@@ -1,9 +1,11 @@
 Cleaning output directory (./../../huawei/kirin710-9-common/../../../vendor/huawei/kirin710-9-common/proprietary)..
-Extracting 542 files in ./../../huawei/kirin710-9-common/proprietary-files.txt from ./dump/:
+Extracting 544 files in ./../../huawei/kirin710-9-common/proprietary-files.txt from ./dump/:
   - vendor/bin/hw/android.hardware.drm@1.1-service.widevine
   - vendor/lib/libwvhidl.so
     + Fixed up vendor/lib/libwvhidl.so
   - vendor/lib/liboemcrypto.so
+  - vendor/etc/xml/iaware_config_cust.bin
+  - vendor/etc/xml/uniperf_config_cust.xml
   - system/bin/tee_auth_daemon
   - system/etc/native_packages.bin
   - system/lib/libc_secshared.so
@@ -336,6 +338,7 @@ Extracting 542 files in ./../../huawei/kirin710-9-common/proprietary-files.txt f
   - vendor/lib/vendor.huawei.hardware.ai@1.0.so
   - vendor/lib/vendor.huawei.hardware.ai@1.1.so
   - vendor/lib/vendor.huawei.hardware.ai@1.2.so
+  - vendor/lib/vendor.huawei.hardware.ai@2.0.so
   - vendor/lib/vendor.huawei.hardware.biometrics.hwfacerecognize@1.0.so
   - vendor/lib/vendor.huawei.hardware.biometrics.hwfacerecognize@1.1.so
   - vendor/lib/vendor.huawei.hardware.biometrics.hwsecurefacerecognize@1.0.so
@@ -569,14 +572,12 @@ This is a mistake and you want to either remove the hash completely, or add an e
   - vendor/lib64/vendor.huawei.hardware.sensors@1.0.so
   - vendor/lib64/vendor.huawei.hardware.tp@1.0.so
   - vendor/phone.prop
-  - vendor/etc/xml/iaware_config_cust.xml
-    + Fixed up vendor/etc/xml/iaware_config_cust.xml
   - vendor/lib/libril.so
   - vendor/lib64/hw/audio.primary.kirin710.so
     + Fixed up vendor/lib64/hw/audio.primary.kirin710.so
   - vendor/lib64/libril.so
 Cleaning output directory (./../../huawei/kirin710-9-common/../../../vendor/huawei/potter/proprietary)..
-Extracting 689 files in ./../../huawei/kirin710-9-common/../potter/proprietary-files.txt from ./dump/:
+Extracting 683 files in ./../../huawei/kirin710-9-common/../potter/proprietary-files.txt from ./dump/:
   - odm/etc/audio/algorithm/algorithm_POT_normal.xml
     + Fixed up odm/etc/audio/algorithm/algorithm_POT_normal.xml
   - odm/etc/audio/asrenhance/parameters_nuance_16k_2EC.bsd
@@ -1667,12 +1668,6 @@ Extracting 689 files in ./../../huawei/kirin710-9-common/../potter/proprietary-f
   - vendor/etc/cfg_pot_lx2j_hisi.ini
   - vendor/etc/cfg_pot_lx3_hisi.ini
   - vendor/etc/cfg_pot_tl00_hisi.ini
-  - vendor/etc/wifi/hostapd_hisi.conf
-  - vendor/etc/wifi/p2p_supplicant_hisi.conf
-  - vendor/etc/wifi/p2p_supplicant_overlay.conf
-  - vendor/etc/wifi/wpa_supplicant.conf
-  - vendor/etc/wifi/wpa_supplicant_hisi.conf
-  - vendor/etc/wifi/wpa_supplicant_overlay.conf
   - odm/lib64/hwcam/hwcam.imx258.pd.so
   - odm/lib64/hwcam/hwcam.kirin710.POT.p.GC2375POT.so
   - odm/lib64/hwcam/hwcam.kirin710.POT.p.HI1333POT.so

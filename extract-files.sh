@@ -28,6 +28,12 @@ function blob_fixup() {
         odm/lib64/hwcam/hwcam.kirin710.m.POT.so)
             "${PATCHELF}" --replace-needed "libprotobuf-cpp-full.so" "libprotobuf-cpp-full-v29.so" "${2}"
             ;;
+        odm/lib64/hwcam/hwcam.kirin710.m.POT.so|odm/lib64/hwcam/hwcam.kirin710.m.POT.so)
+            "${PATCHELF}" --remove-needed "vendor.huawei.hardware.ai@1.0.so" "${2}"
+            "${PATCHELF}" --remove-needed "vendor.huawei.hardware.ai@1.1.so" "${2}"
+            "${PATCHELF}" --remove-needed "vendor.huawei.hardware.ai@2.0.so" "${2}"
+            "${PATCHELF}" --remove-needed "vendor.huawei.hardware.biometrics.hwsecurefacerecognize@1.0.so" "${2}"
+            ;;
     esac
 }
 
