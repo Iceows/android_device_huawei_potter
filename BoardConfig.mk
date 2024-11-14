@@ -13,7 +13,7 @@ include device/huawei/kirin710-9-common/BoardConfigCommon.mk
 include vendor/huawei/potter/BoardConfigVendor.mk
 
 # Display
-TARGET_SCREEN_DENSITY := 415
+TARGET_SCREEN_DENSITY := 480
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
