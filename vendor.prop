@@ -8,6 +8,11 @@ bluetooth.device.default_name=Huawei P Smart 2019
 # ro.build.id=HUAWEIPOT-L21
 
 ro.dual.sim.phone=true
-ro.hwcamera.ai_resolution=3264x2448
+
 ro.product.hardwareversion=HL3POTM
 persist.sys.dualcards=true
+
+# AI
+ro.camera.master_ai_default=off
+ro.camera.front_ai_default=off
+ro.hwcamera.ai_resolution=3264x2448
