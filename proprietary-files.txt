@@ -663,6 +663,7 @@ vendor/etc/camera/watermark/param.xml
 
 
 # Device
+vendor/etc/cfg_chicago_hisi.ini
 vendor/etc/cfg_pot_al00_7645_hisi.ini
 vendor/etc/cfg_pot_al00_hisi.ini
 vendor/etc/cfg_pot_al00a_hisi.ini
