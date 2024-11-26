@@ -5,6 +5,11 @@ on early-boot
     
 on boot
 
+# Add for multi scale
+    setprop debug.enable.rawnfds.flag 1
+    setprop debug.enable.yuvnfds.flag 1
+    setprop debug.enable.yuvnfds.offline.flag 1
+    
 # Fingerprint
     chown system system /dev/fpc1020
     chmod 0660 /dev/fpc1020
