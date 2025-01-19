@@ -577,7 +577,7 @@ This is a mistake and you want to either remove the hash completely, or add an e
     + Fixed up vendor/lib64/hw/audio.primary.kirin710.so
   - vendor/lib64/libril.so
 Cleaning output directory (./../../huawei/kirin710-9-common/../../../vendor/huawei/potter/proprietary)..
-Extracting 683 files in ./../../huawei/kirin710-9-common/../potter/proprietary-files.txt from ./dump/:
+Extracting 688 files in ./../../huawei/kirin710-9-common/../potter/proprietary-files.txt from ./dump/:
   - odm/etc/audio/algorithm/algorithm_POT_normal.xml
     + Fixed up odm/etc/audio/algorithm/algorithm_POT_normal.xml
   - odm/etc/audio/asrenhance/parameters_nuance_16k_2EC.bsd
@@ -1659,12 +1659,17 @@ Extracting 683 files in ./../../huawei/kirin710-9-common/../potter/proprietary-f
   - vendor/etc/camera/watermark/dm.argb
   - vendor/etc/camera/watermark/dm.png
   - vendor/etc/camera/watermark/param.xml
+  - vendor/etc/cfg_chicago_hisi.ini
   - vendor/etc/cfg_pot_al00_7645_hisi.ini
+  - vendor/etc/cfg_pot_al00_7645_hisi_nxp.ini
   - vendor/etc/cfg_pot_al00_hisi.ini
   - vendor/etc/cfg_pot_al00a_hisi.ini
+  - vendor/etc/cfg_pot_lx1_7646_hisi.ini
+  - vendor/etc/cfg_pot_lx1_7646_hisi_nxp.ini
   - vendor/etc/cfg_pot_lx1_hisi.ini
   - vendor/etc/cfg_pot_lx1af_hisi.ini
   - vendor/etc/cfg_pot_lx1t_hisi.ini
+  - vendor/etc/cfg_pot_lx1t_hisi_nxp.ini
   - vendor/etc/cfg_pot_lx2j_hisi.ini
   - vendor/etc/cfg_pot_lx3_hisi.ini
   - vendor/etc/cfg_pot_tl00_hisi.ini

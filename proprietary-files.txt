@@ -661,15 +661,18 @@ vendor/etc/camera/watermark/param.xml
 -odm/lib64/hwcam/hwcam.ov13855.pd.so
 -odm/lib64/hwcam/hwcam.s5k3l6.pd.so
 
-
 # Device
 vendor/etc/cfg_chicago_hisi.ini
 vendor/etc/cfg_pot_al00_7645_hisi.ini
+vendor/etc/cfg_pot_al00_7645_hisi_nxp.ini
 vendor/etc/cfg_pot_al00_hisi.ini
 vendor/etc/cfg_pot_al00a_hisi.ini
+vendor/etc/cfg_pot_lx1_7646_hisi.ini
+vendor/etc/cfg_pot_lx1_7646_hisi_nxp.ini
 vendor/etc/cfg_pot_lx1_hisi.ini
 vendor/etc/cfg_pot_lx1af_hisi.ini
 vendor/etc/cfg_pot_lx1t_hisi.ini
+vendor/etc/cfg_pot_lx1t_hisi_nxp.ini
 vendor/etc/cfg_pot_lx2j_hisi.ini
 vendor/etc/cfg_pot_lx3_hisi.ini
 vendor/etc/cfg_pot_tl00_hisi.ini
