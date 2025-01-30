@@ -18,8 +18,10 @@ $(call inherit-product, vendor/huawei/potter/potter-vendor.mk)
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
-# Overlay
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayPotter \
+    WifiResOverlayPotter
 
 # Init
 PRODUCT_COPY_FILES += \
