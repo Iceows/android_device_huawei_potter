@@ -16,3 +16,6 @@ persist.sys.dualcards=true
 ro.camera.master_ai_default=off
 ro.camera.front_ai_default=off
 ro.hwcamera.ai_resolution=3264x2448
+
+# NetFlix
+ro.netflix.bsp_rev=KIRIN710-15488-1
