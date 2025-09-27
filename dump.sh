@@ -24,11 +24,11 @@ echo "Dump file from phone"
 
 echo "Start extraction"
 sleep 5
-sudo ./extract-files.sh potter ./dump/ > dump.log
+sudo ./extract-files.sh -p ./dump/ > dump.log
 
 echo "Reset owner"
-sudo chown -R $(id -u):$(id -g) ./../../../vendor/huawei/*
-
+sudo chown -R $(id -u):$(id -g) ./../../../vendor/huawei/potter/
+sudo chown -R $(id -u):$(id -g) ./../../../vendor/huawei/kirin710-9-common/
 
 echo "Umount all"
 sleep 5
