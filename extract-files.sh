@@ -49,4 +49,4 @@ export DEVICE=potter
 export DEVICE_COMMON=kirin710-9-common
 export VENDOR=huawei
 
-"./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
+"./../../${VENDOR}/${DEVICE_COMMON}/extract-files-common.sh" "$@"
